@@ -1,4 +1,4 @@
-namespace calculatrice
+﻿namespace calculatrice
 {
     public partial class Form1 : Form
     {
@@ -160,7 +160,7 @@ namespace calculatrice
             float.TryParse(a, out valeur1);
 
             textvaleur.Text = "";
-            textbox1.Text = a + "�";
+            textbox1.Text = a + "÷";
 
         }
 
@@ -205,6 +205,28 @@ namespace calculatrice
         private void button18_Click(object sender, EventArgs e)
         {
             textvaleur.Text = textvaleur.Text + ",";
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            string a = textvaleur.Text;
+
+            double.TryParse(a, out double valeur2);
+            double b = -1 * valeur2;
+            textbox1.Text = "" + valeur2;
+
+            textvaleur.Text = "" + b;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            string a = textvaleur.Text;
+
+            double.TryParse(a, out double valeur2);
+            double b = Math.Sqrt(valeur2);
+            textbox1.Text = "√" + valeur2;
+
+            textvaleur.Text = "" + b;
         }
     }
 }

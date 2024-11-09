@@ -34,6 +34,9 @@
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
             tabPage5 = new TabPage();
+            button20 = new Button();
+            button19 = new Button();
+            button18 = new Button();
             button17 = new Button();
             textbox1 = new TextBox();
             button16 = new Button();
@@ -53,7 +56,6 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            button18 = new Button();
             tabControl1.SuspendLayout();
             tabPage5.SuspendLayout();
             SuspendLayout();
@@ -113,6 +115,8 @@
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(button20);
+            tabPage5.Controls.Add(button19);
             tabPage5.Controls.Add(button18);
             tabPage5.Controls.Add(button17);
             tabPage5.Controls.Add(textbox1);
@@ -143,9 +147,41 @@
             tabPage5.UseVisualStyleBackColor = true;
             tabPage5.Click += tabPage5_Click;
             // 
+            // button20
+            // 
+            button20.Location = new Point(455, 96);
+            button20.Name = "button20";
+            button20.Size = new Size(71, 66);
+            button20.TabIndex = 22;
+            button20.Text = "√x";
+            button20.UseVisualStyleBackColor = true;
+            button20.Click += button20_Click;
+            // 
+            // button19
+            // 
+            button19.Font = new Font("Segoe UI Black", 15F);
+            button19.Location = new Point(6, 312);
+            button19.Name = "button19";
+            button19.Size = new Size(118, 83);
+            button19.TabIndex = 21;
+            button19.Text = "±";
+            button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
+            // 
+            // button18
+            // 
+            button18.Font = new Font("Segoe UI Black", 15F);
+            button18.Location = new Point(254, 312);
+            button18.Name = "button18";
+            button18.Size = new Size(118, 83);
+            button18.TabIndex = 20;
+            button18.Text = ",";
+            button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
+            // 
             // button17
             // 
-            button17.Location = new Point(576, 213);
+            button17.Location = new Point(378, 96);
             button17.Name = "button17";
             button17.Size = new Size(71, 66);
             button17.TabIndex = 19;
@@ -159,18 +195,18 @@
             textbox1.BorderStyle = BorderStyle.None;
             textbox1.Font = new Font("Segoe UI Black", 10F);
             textbox1.ForeColor = SystemColors.ControlDarkDark;
-            textbox1.Location = new Point(581, 77);
+            textbox1.Location = new Point(378, 32);
             textbox1.Name = "textbox1";
-            textbox1.Size = new Size(156, 19);
+            textbox1.Size = new Size(387, 19);
             textbox1.TabIndex = 18;
             textbox1.TextAlign = HorizontalAlignment.Right;
             // 
             // button16
             // 
             button16.Font = new Font("Segoe UI Black", 15F);
-            button16.Location = new Point(576, 141);
+            button16.Location = new Point(532, 312);
             button16.Name = "button16";
-            button16.Size = new Size(71, 66);
+            button16.Size = new Size(88, 83);
             button16.TabIndex = 17;
             button16.Text = "C";
             button16.UseVisualStyleBackColor = true;
@@ -179,9 +215,9 @@
             // button15
             // 
             button15.Font = new Font("Segoe UI Black", 15F);
-            button15.Location = new Point(422, 285);
+            button15.Location = new Point(378, 312);
             button15.Name = "button15";
-            button15.Size = new Size(148, 66);
+            button15.Size = new Size(148, 83);
             button15.TabIndex = 16;
             button15.Text = "=";
             button15.UseVisualStyleBackColor = true;
@@ -191,10 +227,10 @@
             // 
             textvaleur.BackColor = Color.FromArgb(249, 249, 249);
             textvaleur.BorderStyle = BorderStyle.None;
-            textvaleur.Location = new Point(425, 96);
+            textvaleur.Location = new Point(378, 57);
             textvaleur.Multiline = true;
             textvaleur.Name = "textvaleur";
-            textvaleur.Size = new Size(312, 39);
+            textvaleur.Size = new Size(384, 39);
             textvaleur.TabIndex = 15;
             textvaleur.TextAlign = HorizontalAlignment.Right;
             // 
@@ -212,7 +248,7 @@
             // button12
             // 
             button12.Font = new Font("Segoe UI Black", 15F);
-            button12.Location = new Point(499, 213);
+            button12.Location = new Point(455, 240);
             button12.Name = "button12";
             button12.Size = new Size(71, 66);
             button12.TabIndex = 12;
@@ -223,7 +259,7 @@
             // button13
             // 
             button13.Font = new Font("Segoe UI Black", 15F);
-            button13.Location = new Point(422, 213);
+            button13.Location = new Point(378, 240);
             button13.Name = "button13";
             button13.Size = new Size(71, 66);
             button13.TabIndex = 11;
@@ -234,7 +270,7 @@
             // button11
             // 
             button11.Font = new Font("Segoe UI Black", 15F);
-            button11.Location = new Point(499, 141);
+            button11.Location = new Point(455, 168);
             button11.Name = "button11";
             button11.Size = new Size(71, 66);
             button11.TabIndex = 10;
@@ -245,7 +281,7 @@
             // button10
             // 
             button10.Font = new Font("Segoe UI Black", 15F);
-            button10.Location = new Point(422, 141);
+            button10.Location = new Point(378, 168);
             button10.Name = "button10";
             button10.Size = new Size(71, 66);
             button10.TabIndex = 9;
@@ -352,17 +388,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button18
-            // 
-            button18.Font = new Font("Segoe UI Black", 15F);
-            button18.Location = new Point(254, 312);
-            button18.Name = "button18";
-            button18.Size = new Size(118, 83);
-            button18.TabIndex = 20;
-            button18.Text = ",";
-            button18.UseVisualStyleBackColor = true;
-            button18.Click += button18_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -405,5 +430,7 @@
         private TextBox textbox1;
         private Button button17;
         private Button button18;
+        private Button button19;
+        private Button button20;
     }
 }
